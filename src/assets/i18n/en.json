@@ -1,0 +1,107 @@
+{
+  "header": {
+    "login": "Login",
+    "register": "Register",
+    "navbar": {
+      "home": "Home",
+      "listfilm": "List Film",
+      "account": "Account"
+    },
+    "search":"Input search text" 
+  },
+  "setting": {
+    "editprofile": "Edit Profile",
+    "profile": "Profile",
+    "wishlist": "Wish List",
+    "historywatch": "Hisory Watch",
+    "logout": "Logout",
+    "profilecontent": {
+      "title": "My Profile",
+      "description": "Manage profile information for account security",
+      "username": "Username",
+      "name": "Name",
+      "email": "Email",
+      "gender": "Gender",
+      "address": "Address",
+      "phone": "Phone",
+      "save": "Save"
+    },
+    
+    "changepass": {
+      "title": "Forgot Password",
+      "description": "Forgot your password",
+      "email": "Email",
+      "password": "Password",
+      "newPassword": "New Password"
+    },
+    "wishlistcontent": {
+      "title": "Wish List",
+      "description": "Manage wish list information"
+    },
+    "historycontent": {
+      "title": "History Watch",
+      "description": "View the list of watched movies"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "username": "User name",
+    "password": "Password",
+    "forgotpass": "Forgot password?",
+    "placehoderuser": "Enter your username",
+    "placehoderpassword": "Enter your password"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Full name",
+    "username": "User name",
+    "email": "Email",
+    "password": "Password",
+    "confirmpassword": "Confirm password",
+    "placeholderName":"Your name...",
+    "placeholderUsername":"Enter your username",
+    "placeholderEmail":"Enter your email",
+    "placeholderPassword":"Enter your password",
+    "placeholderConfirmPassword":"Enter your confirm password"
+  },
+  "forgotpass": {
+    "title": "Forgot Password",
+    "description": "Reset your password",
+    "email": "Email",
+    "submit": "Submit",
+    "placehoderEmail": "Enter your email"
+  },
+  "changepass": {
+    "title": "Change Password",
+    "description": "Change your password",
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "New Password",
+    "submit": "Submit"
+  },
+  "related": "Related Movie",
+  "recommend": "Recommend For You",
+  "detail": {
+    "watch": "Watch Now",
+    "like": "Like",
+    "share": "Share",
+    "play": "Playing",
+    "type": "Type",
+    "company": "Company",
+    "country": "Country",
+    "actor": "Actor",
+    "releasedate": "Release Date",
+    "content": "Content"
+  },
+  "trending-list": {
+    "trending-movies": "Trending movies"
+  },
+  "trending": "Trending",
+  "popular-list": {
+    "popular-movies": "Popular movies"
+  },
+  "popular": "Popular",
+  "homepage": {
+    "watchnow": "Watch Now"
+  }
+}

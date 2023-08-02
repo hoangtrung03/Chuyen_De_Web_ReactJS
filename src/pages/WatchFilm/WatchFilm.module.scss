@@ -1,0 +1,95 @@
+@import "src/assets/styles/global.scss";
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+
+.root {
+}
+
+@import "src/assets/styles/global.scss";
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+
+body {
+}
+
+.root {
+  background-color: $color-p-black;
+  color: $color-p-white;
+  padding: 2rem;
+  text-align: center;
+}
+
+#detail-page {
+  padding: 0;
+}
+
+#main-content {
+  background: #101821;
+}
+
+#block {
+  display: flex;
+  margin: 0 6%;
+  display: flex;
+}
+
+#left-content {
+  padding: 1rem 0;
+  width: 100%;
+
+  @include at($desktop) {
+    width: 74%;
+  }
+
+  .container {
+    margin: 1rem;
+    width: auto;
+    .film-infor {
+      display: block;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+    }
+    .text {
+      color: #828282;
+      background: #282828;
+    }
+  }
+  .comment {
+    background: #fff;
+    padding: 5px;
+    margin: 20px 0 0;
+    border-radius: 3px;
+    iframe {
+      background-color: transparent;
+    }
+  }
+  .swiper {
+    width: 100px;
+    height: 200px;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

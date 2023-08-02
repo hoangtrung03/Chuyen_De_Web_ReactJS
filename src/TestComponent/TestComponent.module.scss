@@ -1,0 +1,22 @@
+@import 'src/assets/styles/global.scss';
+@import "src/assets/styles/mixin" ;
+@import "src/assets/styles/variable" ;
+
+.root {
+  // color: blue;
+  // @include mixin.rounded;
+  // @include rounded();
+  color: red;
+  @include at($tablet) {
+    color: chocolate;
+  }
+  @include at($desktop-s) {
+    color: aqua;
+  }
+  @include at($desktop) {
+    color: green;
+  }
+  @include at($desktop-l) {
+    color: yellow;
+  }
+}

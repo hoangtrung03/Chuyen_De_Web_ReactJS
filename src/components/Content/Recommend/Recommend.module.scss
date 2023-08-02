@@ -1,0 +1,103 @@
+@import 'src/assets/styles/global.scss';
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+
+#right-content {
+  display: none;
+
+  @include at($desktop) {
+    display: block;
+  }
+
+  .list-movie {
+    padding: 1rem 0 6px 6px;
+
+    .box {
+      overflow: hidden;
+      transition: all .3s ease-in-out;
+      background-position: left center;
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #151d25 0, #11151500 51%, #060808 50%);
+      transition: .8s;
+      padding-right: 10px;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        display: flex;
+      }
+
+      &:hover {
+        background: #0b0f15;
+        clear: both;
+        padding-right: 10px;
+        list-style-type: none;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+        background-position: right center;
+        background-size: 200% 100%;
+        background-image: linear-gradient(to right, #151d25 0, #11151500 51%, #060808 50%);
+        transition: .8s;
+        position: relative;
+
+        img {
+          transition: all .3s ease-in-out;
+        }
+
+        .entry-title {
+          color: #da9d29;
+        }
+      }
+    }
+
+    li {
+      list-style: none;
+      border-bottom-style: dashed;
+      border-bottom-width: 1px;
+      /* border-top-color: gray; */
+      --tw-border-opacity: 1;
+      border-color: rgba(31, 41, 55, var(--tw-border-opacity));
+    }
+
+    .film-title {
+      padding-left: 1rem;
+    }
+
+    .img-film {
+      height: 4rem;
+      max-width: 5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: $color-h3;
+  }
+
+  a {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 6px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .entry-title,
+    .original-title {
+      font-size: 0.8rem;
+      color: #dcdcdc;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+  #right-content{
+    display: none;
+  }
+}

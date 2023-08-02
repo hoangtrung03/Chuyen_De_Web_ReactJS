@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Tôi là Triệu Giáp Đệ",
+        "img": "images/home/tgd.jpg",
+        "ortherName": "Zhao Jiadi (2022)"
+    },
+    {
+        "name": "Nhím Sonic 2",
+        "img": "images/detail/sonic.jpg",
+        "ortherName": "Sonic the Hedgehog 2"
+    },
+    {
+        "name": "Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn",
+        "img": "images/detail/doctor.jpg",
+        "ortherName": "Doctor Strange in the Multiverse of Madness"
+    },
+    {
+        "name": "Chiến Binh Phương Bắc",
+        "img": "/images/detail/chienbinh.jpg",
+        "ortherName": "The Northman"
+    },
+    {
+        "name": "Ma Cà Rồng Morbius",
+        "img": "/images/detail/macarong.jpg",
+        "ortherName": "Morbius"
+    },
+    {
+        "name": "Thành Phố Mất Tích",
+        "img": "/images/detail/thanhpho.jpg",
+        "ortherName": "The Lost City"
+    },
+    {
+        "name": "Sinh Vật Huyền Bí 3: Những Bí Mật Của Dumbledore",
+        "img": "/images/detail/sinhvat.jpg",
+        "ortherName": "Fantastic Beasts: The Secrets of Dumbledore"
+    },
+    {
+        "name": "Thợ Săn Cổ Vật",
+        "img": "/images/detail/thosan.jpg",
+        "ortherName": "Uncharted"
+    }
+]

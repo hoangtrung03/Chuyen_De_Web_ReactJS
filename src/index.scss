@@ -1,0 +1,17 @@
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+@import "src/assets/styles/global";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  @include at($desktop-s) {
+    font-size: 16px;
+  }
+  .ddict_div{
+    display: none;
+  }
+}
+

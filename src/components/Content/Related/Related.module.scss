@@ -1,0 +1,196 @@
+@import 'src/assets/styles/global.scss';
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+
+#related-movies {
+    line-height: 1.5em;
+    background: $color-background;
+    position: relative;
+    width: 100%;
+    // height: 100%;
+    margin-top: 1rem;
+
+    @include at($desktop) {
+        margin-top: 0;
+        padding: 0 20px 0 0px;
+    }
+
+    .heading {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        color: $color-h3;
+    }
+
+    .mySwiper {
+        display: grid;
+        gap: 6px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: rgba(255, 152, 0, .75);
+            color: #fff;
+            border-radius: 0;
+            padding: 8px 5px;
+            position: absolute;
+            font-size: 35px;
+            top: 40%;
+        }
+
+        .items {
+            transform: scale(1);
+            max-width: 400px;
+            max-height: 500px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s linear;
+            user-select: none;
+            overflow: hidden;
+            // border-radius: 6px;
+            transform: center left;
+            position: relative;
+            padding-bottom: 1.5rem;
+
+            .box {
+                width: 100%;
+                transform: scale(1);
+                max-width: 250px;
+                max-height: 500px;
+                // width: 100%;
+                // height: 100%;
+                transition: all 0.5s linear;
+                user-select: none;
+                overflow: hidden;
+                transform: center left;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                @include at($desktop) {
+                    max-width: 400px;
+                    width: 100%;
+                }
+
+                // &:hover {
+                //     transform: scale(1.1);
+                //     transition: 0.5s;
+                //     z-index: 10;
+                //     opacity: 0.6;
+                // }
+
+                .img-film {
+                    display: block;
+                    width: 100%;
+                    -webkit-transform-style: preserve-3d;
+                    height: 150px;
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                    cursor: pointer;
+                    scroll-behavior: smooth;
+                    transition: all .3s ease-in-out;
+
+                    @include at($desktop) {
+                        // width: 200px;
+                        height: 300px;
+                        object-fit: cover;
+                        // border-radius: 5%;
+                        // -moz-border-radius: 5%;
+                        // -webkit-border-radius: 5%;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        z-index: 10;
+                        // opacity: 0.6;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+
+                .film-title-box {
+                    position: relative;
+                    padding: 50px 0 0 !important;
+                    text-align: center !important;
+                    background: #202a34 !important;
+                    border-bottom-right-radius: 7px;
+                    border-bottom-left-radius: 7px;
+
+                    @include at($desktop) {
+                        // width: 200px;
+                    }
+
+                    .film-title {
+                        position: absolute;
+                        background: transparent;
+                        line-height: 18px;
+                        padding: 8px 10px 4px;
+                        margin: 0;
+                        bottom: 0;
+                        width: 100%;
+
+                        .entry-title {
+                            font-size: 14px;
+                            color: $color-h3;
+                            font-weight: 700;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                            &:hover .tooltip {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+                            .tooltip {
+                                font-size: 13px;
+                                visibility: hidden;
+                                width: 120px;
+                                background-color: #555;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 6px;
+                                padding: 5px 0;
+                                position: absolute;
+                                z-index: 1;
+                                bottom: 125%;
+                                left: 50%;
+                                margin-left: -60px;
+                                opacity: 0;
+                                transition: opacity 0.3s;
+                                white-space: normal;
+                                max-width: 300px;
+                                word-wrap: break-word;
+
+                                ::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    margin-left: -5px;
+                                    border-width: 5px;
+                                    border-style: solid;
+                                    border-color: #555 transparent transparent transparent;
+                                }
+                            }
+                        }
+
+                        .original-title {
+                            font-size: 11.5px !important;
+                            margin: 0;
+                            padding-right: 5px;
+                            color: $color-text;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

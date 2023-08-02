@@ -1,0 +1,16 @@
+@import '~antd/dist/antd.css';
+
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255, 152, 0, .75);
+  color: #fff;
+  border-radius: 0;
+  padding: 8px 5px;
+  position: absolute;
+
+  &::after {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,90 @@
+@import "src/assets/styles/global.scss";
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+$color-border: rgba(29, 39, 49, 0.6509803922);
+$color-background: #151d25;
+$color-item: #101821;
+$color-h3: #ff9601;
+$color-text: #fff;
+
+.register-container {
+  height: auto;
+  min-height: 80vh;
+  background-color: #151d25;
+  padding: 20px;
+
+  .register-form {
+    width: 85%;
+    margin: auto;
+    #form-control {
+      // background-color: #2f3441;
+      border-radius: 20px !important;
+      box-shadow: none !important;
+      border: 1px solid #00acc1;
+      // color: #fff;
+      font-size: 1rem;
+      font-weight:400 ;
+      border-radius: 20px !important;
+      transition: 0.7s all;
+      padding: 10px 20px;
+    
+      &:focus {
+        border-radius: 3px !important;
+        transition: .7s all;
+      }
+    }
+    h1 {
+      color: #fff;
+    }
+
+    label {
+      margin-bottom: 0.3rem;
+    }
+
+    .form-control {
+      transition: 0.7s all;
+      margin-bottom: 1rem;
+    }
+
+    @include at($desktop) {
+      width: 40%;
+
+      label {
+        margin-bottom: 0;
+      }
+
+      .form-control {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.form-control {
+  transition: 0.7s all;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background-color: #4caf50;
+  color: white;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  color: #ff9601;
+  text-align: center;
+}

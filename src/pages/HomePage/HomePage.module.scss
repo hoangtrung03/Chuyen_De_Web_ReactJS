@@ -1,0 +1,203 @@
+@import 'src/assets/styles/global.scss';
+@import "src/assets/styles/mixin";
+@import "src/assets/styles/variable";
+
+body {
+  a {
+    text-decoration: none;
+  }
+}
+
+.container {
+  background: $color-background;
+}
+
+.root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .top-slider {
+    padding-top: 2px;
+    z-index: 1;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(0deg,rgba(0,0,0,.5),transparent);
+    z-index: -1;
+  }
+
+  .row {
+    display: flex;
+    background-color: $color-background;
+
+    .mySwiper {
+      display: grid;
+      gap: 6px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      overflow: hidden;
+      scroll-behavior: smooth;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        background: rgba(255, 152, 0, .75);
+        color: #fff;
+        border-radius: 0;
+        padding: 8px 5px;
+        position: absolute;
+        font-size: 35px;
+        top: 40%;
+      }
+
+      .items {
+        transform: scale(1);
+        max-width: 400px;
+        max-height: 500px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s linear;
+        user-select: none;
+        overflow: hidden;
+        // border-radius: 6px;
+        transform: center left;
+        position: relative;
+        padding-bottom: 1.5rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.col-left {
+  padding: 0 0 1rem 0;
+  width: 100%;
+
+  @include at($desktop) {
+    width: 74%;
+  }
+}
+
+.col-right {}
+
+.container-col-right {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: calc(100vh - 77px);
+}
+
+.swiper-item {
+  background-color: aqua;
+}
+
+.item {
+  position: relative;
+  height: 90%;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 40%);
+
+  .button-watch {
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1rem;
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.2s;
+    
+    &:hover {
+      color: #ff9601;
+    }
+
+    @include at($desktop) {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    svg {
+      margin-left: 5px;
+      transform: translateY(-1px);
+    }
+  }
+
+  .content {
+    position: absolute;
+    color: $color-h3;
+    font-weight: 700;
+    text-align: left;
+    bottom: 3rem;
+    left: 1rem;
+    vertical-align: middle;
+
+    @include at($desktop) {
+      bottom: 2rem;
+      left: 2rem;
+    }
+  }
+
+  .vote {
+    position: absolute;
+    color: #fff;
+    bottom: 1.2rem;
+    left: 1rem;
+    margin: 0;
+
+    @include at($desktop) {
+      bottom: 2rem;
+      left: 2rem;
+    }
+  }
+}
+
+.background {
+  display: block;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
+
+}
+
+.box {
+  width: 100%;
+  // transform: scale(1);
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+  user-select: none;
+  overflow: hidden;
+  transform: center left;
+  position: relative;
+
+
+  .img-film {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    height: 300px;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+  }
+}
